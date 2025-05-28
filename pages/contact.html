@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frosty Delights - Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .hamburger { display: none; }
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 64px;
+                left: 0;
+                background: white;
+                z-index: 10;
+                padding: 1rem;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white text-black p-4 fixed w-full top-0 z-20 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl sm:text-2xl font-bold">Frosty Delights</h1>
+            <div class="hamburger">
+                <i class="fas fa-bars text-2xl"></i>
+            </div>
+            <ul class="nav-links flex space-x-4 sm:space-x-6 text-sm sm:text-base">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="menu.html" class="hover:underline">Menu</a></li>
+                <li><a href="about.html" class="hover:underline">About Us</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                <li><a href="location.html" class="hover:underline">Location</a></li>
+                <li><a href="careers.html" class="hover:underline">Careers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto py-16 sm:py-20 px-4">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6">Contact Us</h2>
+
+        <!-- Send Us a Message -->
+        <div class="mb-8">
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">Send Us a Message</h3>
+            <div class="bg-white p-4 rounded shadow max-w-lg mx-auto">
+                <form id="contact-form" action="https://formspree.io/f/xeogyvka" method="POST" class="space-y-4">
+                    <input type="hidden" name="_next" value="thanks.html">
+                    <input type="hidden" name="_gotcha" style="display:none">
+                    <div>
+                        <label for="name" class="block text-sm sm:text-base font-semibold">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full p-2 border rounded text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm sm:text-base font-semibold">Email</label>
+                        <input type="email" id="email" name="_replyto" required class="w-full p-2 border rounded text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Your Email">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm sm:text-base font-semibold">Message</label>
+                        <textarea id="message" name="message" required class="w-full p-2 border rounded-md shadow-sm text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-600" rows="5" placeholder="500"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Quick Contact -->
+        <div class="mb-8 bg-white p-4 rounded-md shadow-md">
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">Quick Contact</h3>
+            <p class="text-sm sm:text-base text-center">
+                <strong>Phone:</strong> <a href="tel:+17039579523" class="underline hover:text-blue-600 hover:bg-blue-600">(703) 235-9232</a><br>
+                <strong>Email:</strong> <a href="mailto:Scapegoats@gmail.com" class="underline hover:text-blue-600">Scapegoats@gmail.com</a><br>
+                <strong>Address:</strong> 24025 Evergreen Mills St, Evergreen, CA 92301
+            </p>
+        </div>
+
+        <!-- Follow Us -->
+<div class="mb-8 bg-white p-4 rounded-md shadow-md">
+    <h3 class="text-lg sm:text-xl md:text-2xl font-semibold mb-4">Follow Us</h3>
+    <p class="text-sm sm:text-base text-center">
+        <a href="https://x.com/frostydelights" class="underline hover:text-blue-600"><i class="fab fa-x mr-2"></i>X</a> | 
+        <a href="https://scapegoats.com" class="underline hover:text-blue-600"><i class="fab fa-instagram mr-2"></i>Instagram</a> | 
+        <a href="https://www.facebook.com/profile.php?id=61574954050915" class="underline hover:text-blue-600"><i class="fab fa-facebook-f mr-2"></i>Facebook</a>
+    </p>
+</div>
+
+<!-- Catering & Events -->
+<div class="mb-8 bg-white p-4 rounded-md shadow-md">
+    <h3 class="text-lg sm:text-xl md:text-2xl font-semibold mb-4">Catering & Events</h3>
+    <p class="text-sm sm:text-base text-center mb-4">Planning a special event? We offer catering services for:</p>
+    <ul class="text-sm sm:text-base list-disc list-inside mx-auto max-w-md">
+        <li>Birthday Parties</li>
+        <li>Corporate Events</li>
+        <li>School Functions</li>
+        <li>Community Gatherings</li>
+    </ul>
+    <div class="text-center mt-4">
+        <a href="mailto:Scapegoats@gmail.com" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">Request Catering Info</a>
+    </div>
+</div>
+
+<!-- Frequently Asked Questions -->
+<div class="mb-8">
+    <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-center mb-4">Frequently Asked Questions</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-white p-4 rounded-md shadow-md">
+            <h4 class="text-base sm:text-lg md:text-xl font-semibold">Do you offer dairy-free options?</h4>
+            <p class="text-sm sm:text-base mt-2">Yes! Most of our fruit flavors are dairy-free. We also have special options for different dietary needs.</p>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+            <h4 class="text-base sm:text-lg md:text-xl font-semibold">How far in advance should I place a large order?</h4>
+            <p class="text-sm sm:text-base mt-2">For orders of 20+ snowballs, we recommend 48 hours notice to ensure we can accommodate your request.</p>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+            <h4 class="text-base sm:text-lg md:text-xl font-semibold">Can I request a custom flavor?</h4>
+            <p class="text-sm sm:text-base mt-2">Absolutely! We love creating custom flavors. Contact us with your idea and we'll do our best to make it happen.</p>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+            <h4 class="text-base sm:text-lg md:text-xl font-semibold">Can I bring my own container (BYOC) for snowballs?</h4>
+            <p class="text-sm sm:text-base mt-2">Yes! Our EcoBoost pricing applies to clean containers clearly marked with ounce measurements. Save money and help the environment!</p>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+            <h4 class="text-base sm:text-lg md:text-xl font-semibold">Is there a minimum order for catering?</h4>
+            <p class="text-sm sm:text-base mt-2">We recommend a minimum of 20 snowballs for catering orders to ensure we can provide the best service and variety.</p>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+            <h4 class="text-base sm:text-lg md:text-xl font-semibold">Are pets allowed at your location?</h4>
+            <p class="text-sm sm:text-base mt-2">Unfortunately, we cannot accommodate dogs due to our livestock guardian dogs, who may view new dogs as threats or playmates.</p>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 px-4">
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm sm:text-base">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="menu.html" class="hover:underline">Menu</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                    <li><a href="location.html" class="hover:underline">Location</a></li>
+                    <li><a href="careers.html" class="hover:underline">Careers</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-4">Contact Us</h3>
+                <p class="text-sm sm:text-base">Email: <a href="mailto:ScapegoatsSnowballs@gmail.com" class="hover:underline">ScapegoatsSnowballs@gmail.com</a></p>
+                <p class="text-sm sm:text-base">Phone: <a href="tel:+1234567890" class="hover:underline">(703) 957-9523</a></p>
+                <p class="mt-2 text-sm sm:text-base">Follow us:</p>
+                <p class="text-sm sm:text-base">
+                    <a href="https://x.com/frostydelights" class="hover:underline"><i class="fab fa-x-twitter mr-1"></i>X</a> | 
+                    <a href="https://instagram.com/frostydelights" class="hover:underline"><i class="fab fa-instagram mr-1"></i>Instagram</a> | 
+                    <a href="https://www.facebook.com/profile.php?id=61574954050915" class="hover:underline"><i class="fab fa-facebook-f mr-1"></i>Facebook</a>
+                </p>
+            </div>
+            <!-- Hours -->
+            <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-4">Hours of Operation</h3>
+                <p class="text-sm sm:text-base">Mon-Sat: 11:00 AM - 8:00 PM</p>
+                <p class="text-sm sm:text-base">Sun: 12:00 PM - 6:00 PM</p>
+            </div>
+        </div>
+        <div class="text-center mt-6 text-sm sm:text-base">
+            <p>© 2025 Frosty Delights. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Formspree AJAX submission
+        $(document).ready(function() {
+            $('#contact-form').on('submit', function(e) {
+                e.preventDefault(); // Prevent default form submission
+                const form = $(this);
+                $.ajax({
+                    url: form.attr('action'),
+                    method: 'POST',
+                    data: form.serialize(),
+                    dataType: 'json',
+                    headers: { 'Accept': 'application/json' },
+                    success: function() {
+                        window.location.href = 'thanks.html'; // Redirect to thanks.html
+                    },
+                    error: function() {
+                        alert('Something went wrong. Please try again.');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

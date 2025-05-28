@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frosty Delights - About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hamburger { display: none; }
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 64px;
+                left: 0;
+                background: white;
+                z-index: 10;
+                padding: 1rem;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+        }
+        .goat-section, .feedback-section {
+            display: none;
+        }
+        .goat-section.active, .feedback-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white text-black p-4 fixed w-full top-0 z-20 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl sm:text-2xl font-bold">Frosty Delights</h1>
+            <div class="hamburger">
+                <i class="fas fa-bars text-2xl"></i>
+            </div>
+            <ul class="nav-links flex space-x-4 sm:space-x-6 text-sm sm:text-base">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="menu.html" class="hover:underline">Menu</a></li>
+                <li><a href="about.html" class="hover:underline">About Us</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                <li><a href="location.html" class="hover:underline">Location</a></li>
+                <li><a href="careers.html" class="hover:underline">Careers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="container mx-auto py-16 sm:py-20 px-4">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6">About Us</h2>
+
+        <!-- Our Story -->
+        <div class="mb-8">
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">Our Story</h3>
+            <div class="bg-white p-4 rounded shadow">
+                <p class="text-sm sm:text-base">
+                    Frosty Delights was founded in 2010 by Maria Johnson, who wanted to bring the joy of authentic, gourmet snowballs to our community. What started as a small cart at local events has grown into the beloved neighborhood spot that it is today.
+                </p>
+                <p class="text-sm sm:text-base mt-2">
+                    We take pride in our craft, using only the finest ingredients and house-made syrups to create unique flavor combinations that you won't find anywhere else. Our snowballs are known for their fluffy texture and rich flavors, creating the perfect treat for hot summer days or anytime you want to add a little sweetness to your life.
+                </p>
+            </div>
+        </div>
+
+        <!-- Our Values -->
+        <div class="mb-8">
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">Our Values</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="text-base sm:text-lg md:text-xl font-semibold">Quality First</h4>
+                    <p class="text-sm sm:text-base mt-2">We use only premium syrups and the fluffiest shaved ice for the perfect texture and flavor.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="text-base sm:text-lg md:text-xl font-semibold">Community Focus</h4>
+                    <p class="text-sm sm:text-base mt-2">We're proud to be a gathering place for families and friends in our community.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="text-base sm:text-lg md:text-xl font-semibold">Sustainability</h4>
+                    <p class="text-sm sm:text-base mt-2">We use eco-friendly packaging and support local suppliers whenever possible.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Members -->
+        <div class="mb-8">
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">Team Members</h3>
+            <div class="bg-white p-4 rounded shadow">
+                <p class="text-sm sm:text-base text-center">Meet our dedicated team members who make Frosty Delights a sweet success! (Coming soon)</p>
+            </div>
+        </div>
+
+        <!-- Goat of the Month Bio -->
+        <div class="goat-section mb-8" id="goat-section">
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">Goat of the Month</h3>
+            <div class="bg-white p-4 rounded shadow">
+                <p class="text-sm sm:text-base" id="goat-bio">Sample Goat: Meet Billy, our star goat who loves nibbling on leftover snowball ice!</p>
+            </div>
+        </div>
+
+        <!-- What Our Customers Are Saying -->
+        <div class="feedback-section mb-8" id="feedback-section">
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">What Our Customers Are Saying</h3>
+            <div class="bg-white p-4 rounded shadow">
+                <p class="text-sm sm:text-base" id="customer-feedback">Sample Feedback: "Frosty Delights has the best snowballs in town!" - Happy Customer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 px-4">
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm sm:text-base">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="menu.html" class="hover:underline">Menu</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                    <li><a href="location.html" class="hover:underline">Location</a></li>
+                    <li><a href="careers.html" class="hover:underline">Careers</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-4">Contact Us</h3>
+                <p class="text-sm sm:text-base">Email: <a href="mailto:info@frosty-delights.com" class="hover:underline">ScapegoatsSnowballs@gmail.com</a></p>
+                <p class="text-sm sm:text-base">Phone: <a href="tel:+1234567890" class="hover:underline">(703) 957-9523</a></p>
+                <p class="mt-2 text-sm sm:text-base">Follow us:</p>
+                <p class="text-sm sm:text-base">
+                    <a href="https://x.com/frostydelights" class="hover:underline"><i class="fab fa-x-twitter mr-1"></i>X</a> | 
+                    <a href="https://instagram.com/frostydelights" class="hover:underline"><i class="fab fa-instagram mr-1"></i>Instagram</a> | 
+                    <a href="https://www.facebook.com/profile.php?id=61574954050915" class="hover:underline"><i class="fab fa-facebook-f mr-1"></i>Facebook</a>
+                </p>
+            </div>
+            <!-- Hours -->
+            <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-4">Hours of Operation</h3>
+                <p class="text-sm sm:text-base">Mon-Sat: 11:00 AM - 8:00 PM</p>
+                <p class="text-sm sm:text-base">Sun: 12:00 PM - 6:00 PM</p>
+            </div>
+        </div>
+        <div class="text-center mt-6 text-sm sm:text-base">
+            <p>© 2025 Frosty Delights. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Goat of the Month dynamic display
+        const goats = [
+            // Sample data (empty to hide section by default)
+            // { id: 'goat-section', bio: 'Meet Billy, our star goat who loves nibbling on leftover snowball ice!' }
+        ];
+
+        if (goats.length > 0 && goats[0].bio) {
+            document.getElementById('goat-section').classList.add('active');
+            document.getElementById('goat-bio').textContent = goats[0].bio;
+        }
+
+        // Customer Feedback dynamic display
+        const feedback = [
+            // Sample data (empty to hide section by default)
+            // { id: 'feedback-section', text: '"Frosty Delights has the best snowballs in town!" - Happy Customer' }
+        ];
+
+        if (feedback.length > 0 && feedback[0].text) {
+            document.getElementById('feedback-section').classList.add('active');
+            document.getElementById('customer-feedback').textContent = feedback[0].text;
+        }
+    </script>
+</body>
+</html>
