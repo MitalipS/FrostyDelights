@@ -27,6 +27,9 @@
                 display: block;
                 cursor: pointer;
             }
+            .hide-on-mobile {
+                display: none !important;
+            }
         }
         .fan-favorite-tile {
             display: none;
@@ -57,36 +60,38 @@
 
     <!-- Menu Section -->
     <section class="container mx-auto py-16 sm:py-20 px-4">
-        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6">Our Menu</h2>
-        <p class="text-center mt-2 text-sm sm:text-base">Scan the QR code to view our menu on your phone!</p>
-        <div class="flex justify-center mt-4 mb-6">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mitalips.github.io/FrostyDelights/menu.html" alt="Menu QR Code" class="w-32 sm:w-40">
-        </div>
+        <div class="hide-on-mobile">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6">Our Menu</h2>
+            <p class="text-center mt-2 text-sm sm:text-base">Scan the QR code to view our menu on your phone!</p>
+            <div class="flex justify-center mt-4 mb-6">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mitalips.github.io/FrostyDelights/menu.html" alt="Menu QR Code" class="w-32 sm:w-40">
+            </div>
 
-        <!-- Fan Favorites -->
-        <div class="mb-8">
-            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">Fan Favorites</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div class="fan-favorite-tile bg-white p-4 rounded shadow" id="fan1">
-                    <img src="https://via.placeholder.com/300x200?text=Fan+Favorite+1" alt="Fan Favorite 1" class="w-full h-40 object-cover rounded">
-                    <h4 class="text-base sm:text-lg font-semibold mt-2">Jane Doe</h4>
-                    <p class="text-sm sm:text-base">Loves our Cherry & Marshmallow Creme combo! Jane, a Loudoun County local, enjoys snowballs with her kids every weekend.</p>
-                </div>
-                <div class="fan-favorite-tile bg-white p-4 rounded shadow" id="fan2">
-                    <img src="https://via.placeholder.com/300x200?text=Fan+Favorite+2" alt="Fan Favorite 2" class="w-full h-40 object-cover rounded">
-                    <h4 class="text-base sm:text-lg font-semibold mt-2">John Smith</h4>
-                    <p class="text-sm sm:text-base">Can’t get enough of our Hawaiian Mango with Sprinkles! John is a teacher who visits after school.</p>
-                </div>
-                <div class="fan-favorite-tile bg-white p-4 rounded shadow" id="fan3">
-                    <img src="https://via.placeholder.com/300x200?text=Fan+Favorite+3" alt="Fan Favorite 3" class="w-full h-40 object-cover rounded">
-                    <h4 class="text-base sm:text-lg font-semibold mt-2">Sarah Lee</h4>
-                    <p class="text-sm sm:text-base">Obsessed with our Sugar-Free Watermelon! Sarah, a fitness coach, loves our eco-friendly cups.</p>
+            <!-- Fan Favorites -->
+            <div class="mb-8">
+                <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">Fan Favorites</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="fan-favorite-tile bg-white p-4 rounded shadow" id="fan1">
+                        <img src="https://via.placeholder.com/300x200?text=Fan+Favorite+1" alt="Fan Favorite 1" class="w-full h-40 object-cover rounded">
+                        <h4 class="text-base sm:text-lg font-semibold mt-2">Jane Doe</h4>
+                        <p class="text-sm sm:text-base">Loves our Cherry & Marshmallow Creme combo! Jane, a Loudoun County local, enjoys snowballs with her kids every weekend.</p>
+                    </div>
+                    <div class="fan-favorite-tile bg-white p-4 rounded shadow" id="fan2">
+                        <img src="https://via.placeholder.com/300x200?text=Fan+Favorite+2" alt="Fan Favorite 2" class="w-full h-40 object-cover rounded">
+                        <h4 class="text-base sm:text-lg font-semibold mt-2">John Smith</h4>
+                        <p class="text-sm sm:text-base">Can’t get enough of our Hawaiian Mango with Sprinkles! John is a teacher who visits after school.</p>
+                    </div>
+                    <div class="fan-favorite-tile bg-white p-4 rounded shadow" id="fan3">
+                        <img src="https://via.placeholder.com/300x200?text=Fan+Favorite+3" alt="Fan Favorite 3" class="w-full h-40 object-cover rounded">
+                        <h4 class="text-base sm:text-lg font-semibold mt-2">Sarah Lee</h4>
+                        <p class="text-sm sm:text-base">Obsessed with our Sugar-Free Watermelon! Sarah, a fitness coach, loves our eco-friendly cups.</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Flavor of the Week -->
-        <div class="mb-8">
+        <div id="flavor-of-the-week" class="mb-8">
             <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">Flavor of the Week</h3>
             <p class="text-sm sm:text-base text-center">Tiger’s Blood: A vibrant blend of strawberry, watermelon, and a hint of coconut. Try it this week for $1 off!</p>
         </div>
@@ -249,8 +254,8 @@
             <!-- Contact Info -->
             <div>
                 <h3 class="text-lg sm:text-xl font-semibold mb-4">Contact Us</h3>
-                <p class="text-sm sm:text-base">Email: <a href="mailto:info@frosty-delights.com" class="hover:underline">ScapegoatsSnowballs@gmail.com</a></p>
-                <p class="text-sm sm:text-base">Phone: <a href="tel:+1234567890" class="hover:underline">(703) 957-9523</a></p>
+                <p class="text-sm sm:text-base">Email: <a href="mailto:ScapegoatsSnowballs@gmail.com" class="hover:underline">ScapegoatsSnowballs@gmail.com</a></p>
+                <p class="text-sm sm:text-base">Phone: <a href="tel:+17039579523" class="hover:underline">(703) 957-9523</a></p>
                 <p class="mt-2 text-sm sm:text-base">Follow us:</p>
                 <p class="text-sm sm:text-base">
                     <a href="https://x.com/frostydelights" class="hover:underline"><i class="fab fa-x-twitter mr-1"></i>X</a> | 
@@ -288,6 +293,19 @@
         fanFavorites.forEach(fan => {
             if (fan.name && fan.bio && fan.image) {
                 document.getElementById(fan.id).classList.add('active');
+            }
+        });
+
+        // Mobile-specific behavior for QR code scan
+        document.addEventListener('DOMContentLoaded', () => {
+            // Detect mobile devices (screen width < 768px, Tailwind's md breakpoint)
+            const isMobile = window.innerWidth < 768;
+            if (isMobile) {
+                // Scroll to Flavor of the Week section
+                const flavorSection = document.getElementById('flavor-of-the-week');
+                if (flavorSection) {
+                    flavorSection.scrollIntoView({ behavior: 'smooth' });
+                }
             }
         });
     </script>
