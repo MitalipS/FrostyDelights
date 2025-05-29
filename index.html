@@ -11,10 +11,10 @@
             display: flex;
             overflow: hidden;
             width: 100%;
-            max-width: 896px; /* Increased max-width for larger carousel */
+            max-width: 896px;
             margin: 0 auto;
             position: relative;
-            min-height: 400px; /* Increased min-height for taller carousel */
+            min-height: 400px;
         }
         .carousel img {
             width: 100%;
@@ -37,11 +37,15 @@
         }
         .prev { left: 10px; }
         .next { right: 10px; }
-        /* Hide hamburger menu on larger screens */
-        .hamburger { display: none; }
+        .nav-links {
+            display: flex; /* Visible by default on desktop */
+        }
+        .hamburger {
+            display: none; /* Hidden by default on desktop */
+        }
         @media (max-width: 640px) {
             .nav-links {
-                display: none;
+                display: none; /* Hidden by default on mobile */
                 flex-direction: column;
                 width: 100%;
                 position: absolute;
@@ -52,19 +56,19 @@
                 padding: 1rem;
             }
             .nav-links.active {
-                display: flex;
+                display: flex; /* Shown when hamburger clicked */
             }
             .hamburger {
                 display: block;
                 cursor: pointer;
             }
             .carousel {
-                min-height: 300px; /* Adjusted for mobile */
+                min-height: 300px;
             }
         }
         @media (min-width: 768px) {
             .carousel {
-                min-height: 500px; /* Taller on larger screens */
+                min-height: 500px;
             }
         }
     </style>
@@ -89,7 +93,7 @@
     </nav>
 
     <!-- Banner -->
-    <header class="relative pt-24 sm:pt-28"> <!-- Increased padding-top to avoid nav overlap -->
+    <header class="relative pt-24 sm:pt-28">
         <img src="./images/LandingPageImage.jpg" alt="Frosty Delights Banner" class="w-full h-64 sm:h-80 md:h-96 object-cover">
         <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
             <h1 class="text-2xl sm:text-4xl md:text-6xl text-white font-bold text-center px-4">Welcome to Frosty Delights</h1>
@@ -162,8 +166,8 @@
             <!-- Contact Info -->
             <div>
                 <h3 class="text-lg sm:text-xl font-semibold mb-4">Contact Us</h3>
-                <p class="text-sm sm:text-base">Email: <a href="mailto:info@frosty-delights.com" class="hover:underline">ScapegoatsSnowballs@gmail.com</a></p>
-                <p class="text-sm sm:text-base">Phone: <a href="tel:+1234567890" class="hover:underline">(123) 456-7890</a></p>
+                <p class="text-sm sm:text-base">Email: <a href="mailto:ScapegoatsSnowballs@gmail.com" class="hover:underline">ScapegoatsSnowballs@gmail.com</a></p>
+                <p class="text-sm sm:text-base">Phone: <a href="tel:+17039579523" class="hover:underline">(703) 957-9523</a></p>
                 <p class="mt-2 text-sm sm:text-base">Follow us:</p>
                 <p class="text-sm sm:text-base">
                     <a href="https://x.com/frostydelights" class="hover:underline"><i class="fab fa-x-twitter mr-1"></i>X</a> | 
