@@ -1,13 +1,13 @@
-Frosty Delights Website
+Scapegoats Snowballs Website
 **Overview**
-Frosty Delights is a static website for a delightful snowball dessert business based in Leesburg, VA. The site serves as a digital storefront, showcasing the menu, location, and story of Frosty Delights while providing an easy way for customers to get in touch.
-Designed with a clean, responsive layout, the website ensures a seamless experience across devices, inviting users to explore frosty treats and connect with the team.
+Scapegoats Snowballs is a static website for a delightful snowball dessert business based in Leesburg, VA. The site serves as a digital storefront, showcasing the menu, location, and story of Scapegoats Snowballs while providing an easy way for customers to get in touch.
+Designed with a clean, responsive layout, the website ensures a seamless experience across devices, inviting users to explore Scapegoats Snowballs treats and connect with the team.
 
 **Features**
 
 Responsive Design: Fully responsive pages using Tailwind CSS, with a mobile-friendly hamburger menu for navigation on smaller screens.
 Navigation: Fixed white navigation bar with links to Home, Menu, About Us, Contact, Location, and Careers pages.
-Contact Form: A user-friendly contact form integrated with Formspree, allowing customers to send inquiries to ScapegoatsSnowballs@gmail.com. Upon submission, users are redirected to a custom thanks.html page with an engaging message: “Thank You for Reaching Out! Your message has landed with us, and our team is thrilled to connect with you soon! While you wait, dive into the cool world of our frosty delights!”
+Contact Form: A user-friendly contact form integrated with Formspree, allowing customers to send inquiries to ScapegoatsSnowballs@gmail.com. Upon submission, users are redirected to a custom thanks.html page with an engaging message: “Thank You for Reaching Out! Your message has landed with us, and our team is thrilled to connect with you soon! While you wait, dive into the cool world of our Scapegoats Snowballs!”
 Informative Sections: Dedicated pages for menu, location (22025 Evergreen Mills Road, Leesburg, VA), about us, careers, and a contact page with quick contact details, social media links, catering info, and FAQs.
 Footer: Consistent black footer across all pages with quick links, contact info (ScapegoatsSnowballs@gmail.com, (703) 957-9523), social media (X, Instagram, Facebook), and hours (Mon-Sat 11 AM-8 PM, Sun 12 PM-6 PM, with Summer Hours on location page: 12 PM-9 PM daily).
 Styling: Modern design with Tailwind CSS and Font Awesome icons for a polished, professional look.
@@ -62,6 +62,6 @@ User Experience: Add reCAPTCHA for extra spam protection, a loading state for fo
 Accessibility: Improve ARIA labels and keyboard navigation for better accessibility.
 
 License
-© 2025 Frosty Delights. All rights reserved.
+© 2025 Scapegoats Snowballs. All rights reserved.
 Contact
 For inquiries, reach out to ScapegoatsSnowballs@gmail.com or submit a message via the contact form.
