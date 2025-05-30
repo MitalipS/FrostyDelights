@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scapegoats Snowballs - Home</title>
-    <link rel="icon" type="image/png" href="./images/logo_2.png">
+    <title>Scapegoats Snowballs - Home</title> 
+    <link rel="icon" type="image/png" href="./images/logo_1.jpg" sizes="128x128">
+    <link rel="apple-touch-icon" href="./images/logo_1.jpg" sizes="180x180">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
@@ -80,14 +81,15 @@
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
-        <!-- Navigation -->
+
+    <!-- Navigation -->
     <nav class="bg-white text-black p-4 fixed w-full top-0 z-20 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <a href="index.html">
-                    <img src="./images/logo_1.png" alt="Scapegoats Snowballs Logo" class="h-14 sm:h-14">
+                    <img src="./images/logo_1.jpg" alt="Scapegoats Snowballs Logo" class="h-14 sm:h-14">
                 </a>
-                <h1 class="text-xl sm:text-2xl font-bold hidden md:block">Scapegoats Snowballs</h1>
+                <h1 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-500">Scapegoats Snowballs</h1>
             </div>
             <div class="hamburger">
                 <i class="fas fa-bars text-2xl"></i>
@@ -102,22 +104,34 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Banner -->
+<!-- Banner -->
     <header class="relative pt-24 sm:pt-28">
-        <div class="bg-gray-600 flex items-center justify-center h-64 sm:h-80 md:h-96">
-            <div class="text-center font-comic-neue">
+    <div class="bg-purple-300 bg-[url('https://www.transparenttextures.com/patterns/snow.png')] bg-repeat flex items-center h-64 sm:h-80 md:h-96">
+        <div class="flex items-center w-full pl-0">
+            <div class="flex-shrink-0 ml-0">
+                <img src="./images/hero image.png" alt="Snowball Image" class="w-108 h-72 sm:w-144 sm:h-96 object-cover">
+            </div>
+            <div class="flex-grow text-center font-comic-neue px-4">
                 <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-black">Handcrafted Gourmet Snowballs</h1>
-                <p class="text-lg sm:text-xl md:text-2xl text-gray-200 mt-4">Refresh your day with our fluffy shaved ice and premium homemade flavors.</p>
+                <p class="text-lg sm:text-xl md:text-2xl text-black-200 mt-4">Refresh your day with our fluffy shaved ice and premium homemade flavors.</p>
                 <a href="menu.html" class="mt-6 inline-block bg-blue-800 text-white text-lg sm:text-xl px-6 py-3 rounded-full hover:bg-purple-200 font-comic-neue">Chill Out & Choose Your Flavor! ❄️🍧</a>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- Highlights and Carousel Section -->
+<!-- Highlights and Carousel Section -->
     <section class="container mx-auto py-6 sm:py-8 px-4 bg-gray-200 font-comic-neue">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Cards (Left Half) -->
+            <!-- Carousel (Left Half) -->
+            <div class="carousel md:col-span-1">
+                <img src="images/carousel 1.png" alt="Restaurant Space 1" class="active">
+                <img src="images/carousel 2.png" alt="Restaurant Space 2">
+                <img src="images/carousel 3.png" alt="Restaurant Space 3">
+                <button class="carousel-button prev">❮</button>
+                <button class="carousel-button next">❯</button>
+            </div>
+            <!-- Cards (Right Half) -->
             <div class="flex flex-col gap-4">
                 <!-- Tagline Card -->
                 <div class="text-center bg-white p-6 rounded shadow">
@@ -140,19 +154,12 @@
                     </div>
                 </div>
             </div>
-            <!-- Carousel (Right Half) -->
-            <div class="carousel md:col-span-1">
-                <img src="images/carousel 1.png" alt="Restaurant Space 1" class="active">
-                <img src="images/carousel 2.png" alt="Restaurant Space 2">
-                <img src="images/carousel 3.png" alt="Restaurant Space 3">
-                <button class="carousel-button prev">❮</button>
-                <button class="carousel-button next">❯</button>
-            </div>
+            
         </div>
     </section>
 
     <!-- Promos & Events -->
-    <section class="container mx-auto py-6 sm:py-8 px-4 bg-purple-200 font-comic-neue">
+    <section class="container mx-auto py-6 sm:py-8 px-4 bg-green-300 font-comic-neue">
         <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center">What's Happening</h3>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
             <div class="bg-white p-4 rounded shadow">
@@ -171,7 +178,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-600 text-white py-8">
+    <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto grid grid-cols-1 sm:grid-cols-4 gap-6 px-4">
             <div>
                 <h3 class="text-lg sm:text-xl font-semibold mb-4">Scapegoats Snowballs</h3>
