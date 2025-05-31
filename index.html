@@ -80,48 +80,51 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-purple-300 font-sans">
 
-    <!-- Navigation -->
-    <nav class="bg-white text-black p-4 fixed w-full top-0 z-20 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <a href="index.html">
-                    <img src="./images/logo_1.jpg" alt="Scapegoats Snowballs Logo" class="h-14 sm:h-14">
-                </a>
-                <h1 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-500">Scapegoats Snowballs</h1>
+<!-- Navigation and Lilac Line Wrapper -->
+    <div>
+        <nav class="bg-white text-black p-4 fixed w-full top-0 z-20 shadow-md">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html">
+                        <img src="./images/logo_1.jpg" alt="Scapegoats Snowballs Logo" class="h-14 sm:h-14">
+                    </a>
+                    <h1 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-500">Scapegoats Snowballs</h1>
+                </div>
+                <div class="hamburger">
+                    <i class="fas fa-bars text-2xl"></i>
+                </div>
+                <ul class="nav-links space-x-4 sm:space-x-6 text-sm sm:text-base">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="menu.html" class="hover:underline">Menu</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                    <li><a href="location.html" class="hover:underline">Location</a></li>
+                    <li><a href="careers.html" class="hover:underline">Careers</a></li>
+                </ul>
             </div>
-            <div class="hamburger">
-                <i class="fas fa-bars text-2xl"></i>
-            </div>
-            <ul class="nav-links space-x-4 sm:space-x-6 text-sm sm:text-base">
-                <li><a href="index.html" class="hover:underline">Home</a></li>
-                <li><a href="menu.html" class="hover:underline">Menu</a></li>
-                <li><a href="about.html" class="hover:underline">About Us</a></li>
-                <li><a href="contact.html" class="hover:underline">Contact</a></li>
-                <li><a href="location.html" class="hover:underline">Location</a></li>
-                <li><a href="careers.html" class="hover:underline">Careers</a></li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
+        <div class="bg-purple-200 h-1 w-screen fixed top-[86px] z-40"></div>
+    </div>
+
 <!-- Banner -->
-    <header class="relative pt-24 sm:pt-28">
-    <div class="bg-purple-300 bg-[url('https://www.transparenttextures.com/patterns/snow.png')] bg-repeat flex items-center h-64 sm:h-80 md:h-96">
-        <div class="flex items-center w-full pl-0">
-            <div class="flex-shrink-0 ml-0">
+<!-- Banner -->
+    <header class="relative pt-32 sm:pt-36">
+    <div class="bg-purple-200 flex items-center h-64 sm:h-80 md:h-96">
+        <div class="flex w-full">
+            <div class="flex-shrink-0">
                 <img src="./images/hero image.png" alt="Snowball Image" class="w-108 h-72 sm:w-144 sm:h-96 object-cover">
             </div>
-            <div class="flex-grow text-center font-comic-neue px-4">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-black">Handcrafted Gourmet Snowballs</h1>
-                <p class="text-lg sm:text-xl md:text-2xl text-black-200 mt-4">Refresh your day with our fluffy shaved ice and premium homemade flavors.</p>
-                <a href="menu.html" class="mt-6 inline-block bg-blue-800 text-white text-lg sm:text-xl px-6 py-3 rounded-full hover:bg-purple-200 font-comic-neue">Chill Out & Choose Your Flavor! ❄️🍧</a>
+            <div class="flex-grow">
+                <img src="./images/scapegoatsSnowballs.jpg" alt="New Banner Image" class="w-full h-72 sm:h-96 object-cover">
             </div>
         </div>
     </div>
 </header>
 
 <!-- Highlights and Carousel Section -->
-    <section class="container mx-auto py-6 sm:py-8 px-4 bg-gray-200 font-comic-neue">
+    <section class="pt-16 sm:pt-20 py-16 sm:py-20 px-0 bg-gray-200 font-comic-neue">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <!-- Carousel (Left Half) -->
             <div class="carousel md:col-span-1">
@@ -159,7 +162,7 @@
     </section>
 
     <!-- Promos & Events -->
-    <section class="container mx-auto py-6 sm:py-8 px-4 bg-green-300 font-comic-neue">
+    <section class="py-6 sm:py-8 px-0 bg-green-300 font-comic-neue">
         <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center">What's Happening</h3>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
             <div class="bg-white p-4 rounded shadow">
@@ -175,7 +178,7 @@
                 <p class="text-sm sm:text-base">Visit us Monday-Thursday between 3-5 pm for $1 off any regular sized snowball!</p>
             </div>
         </div>
-    </section>
+       </section>
 
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-white py-8">
@@ -183,6 +186,7 @@
             <div>
                 <h3 class="text-lg sm:text-xl font-semibold mb-4">Scapegoats Snowballs</h3>
                 <p class="text-sm sm:text-base">Handcrafted gourmet snowballs made with premium ingredients, serving our community since 2010.</p>
+                 <img src="./images/logo_2.png" alt="Footer Logo" class="w-20 sm:w-24 h-auto mt-4 self-start">
             </div>
             <div class="sm:translate-x-2">
                 <h3 class="text-lg sm:text-xl font-semibold mb-4">Quick Links</h3>
