@@ -21,7 +21,7 @@
             width: 100%;
             margin: 0 auto;
             position: relative;
-            min-height: 300px;
+            min-height: 225px;
         }
         .carousel img {
             width: 100%;
@@ -75,12 +75,12 @@
         }
         @media (min-width: 768px) {
             .carousel {
-                min-height: 400px;
+                min-height: 300px;
             }
         }
     </style>
 </head>
-<body class="bg-purple-300 font-sans">
+<body class="bg-grey-300 font-sans">
 
 <!-- Navigation and Lilac Line Wrapper -->
     <div>
@@ -111,21 +111,20 @@
 <!-- Banner -->
 <!-- Banner -->
     <header class="relative pt-32 sm:pt-36">
-    <div class="bg-purple-200 flex items-center h-64 sm:h-80 md:h-96">
-        <div class="flex w-full">
+    <div class="bg-purple-200 flex items-center h-52 sm:h-64 md:h-80">
+        <div class="max-w-screen-xl mx-auto w-full flex flex-col md:flex-row">
             <div class="flex-shrink-0">
-                <img src="./images/hero image.png" alt="Snowball Image" class="w-108 h-72 sm:w-144 sm:h-96 object-cover">
+                <img src="./images/hero image.png" alt="Snowball Image" class="w-108 sm:w-144 h-56 sm:h-80 object-cover">
             </div>
-            <div class="flex-grow">
-                <img src="./images/scapegoatsSnowballs.jpg" alt="New Banner Image" class="w-full h-72 sm:h-96 object-cover">
+            <div class="flex-grow md:ml-0">
+                <img src="./images/scapegoatsSnowballs.jpg" alt="New Banner Image" class="w-full h-56 sm:h-80 object-cover">
             </div>
         </div>
     </div>
 </header>
-
 <!-- Highlights and Carousel Section -->
-    <section class="pt-16 sm:pt-20 py-16 sm:py-20 px-0 bg-gray-200 font-comic-neue">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <section class="pt-16 sm:pt-20 py-16 sm:py-20 px-4 bg-gray-200 font-comic-neue">
+        <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
             <!-- Carousel (Left Half) -->
             <div class="carousel md:col-span-1">
                 <img src="images/carousel 1.png" alt="Restaurant Space 1" class="active">
@@ -142,13 +141,13 @@
                 </div>
                 <!-- BYOC and EcoTracker Cards -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="text-center bg-white p-6 rounded shadow min-h-[200px] md:min-h-[400px] flex flex-col justify-between">
+                    <div class="text-center bg-white p-6 rounded shadow min-h-[150px] md:min-h-[300px] flex flex-col justify-between">
                         <div>
                             <h3 class="text-lg sm:text-xl md:text-2xl font-bold px-4 mb-8">Bring Your Own Container (BYOC) for Bonus Pricing & Get Discount!</h3>
                             <p class="mt-2 text-sm sm:text-base px-4">Save money and the planet by bringing your own container!</p>
                         </div>
                     </div>
-                    <div class="text-center bg-white p-6 rounded shadow min-h-[200px] md:min-h-[400px] flex flex-col justify-between">
+                    <div class="text-center bg-white p-6 rounded shadow min-h-[150px] md:min-h-[300px] flex flex-col justify-between">
                         <div>
                             <h3 class="text-lg sm:text-xl md:text-2xl font-bold px-4 mb-8">EcoTracker: Small choices, Big impact. Track today, Sustain tomorrow!</h3>
                             <p class="mt-2 text-sm sm:text-base">Cups Saved from Landfill: <span id="cups-saved">1250</span></p>
@@ -157,29 +156,29 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
 
-    <!-- Promos & Events -->
-    <section class="py-6 sm:py-8 px-0 bg-green-300 font-comic-neue">
-        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center">What's Happening</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
-            <div class="bg-white p-4 rounded shadow">
-                <h4 class="text-base sm:text-lg md:text-xl font-semibold">Grand Opening</h4>
-                <p class="text-sm sm:text-base">Join us on June 15, 2025, for our grand opening! First 100 customers get a free snowball!</p>
-            </div>
-            <div class="bg-white p-4 rounded shadow">
-                <h4 class="text-base sm:text-lg md:text-xl font-semibold">Summer Discount</h4>
-                <p class="text-sm sm:text-base">20% off all snowballs every Wednesday in July!</p>
-            </div>
-            <div class="bg-white p-4 rounded shadow">
-                <h4 class="text-base sm:text-lg md:text-xl font-semibold">Happy Hour Discount</h4>
-                <p class="text-sm sm:text-base">Visit us Monday-Thursday between 3-5 pm for $1 off any regular sized snowball!</p>
+<!-- Promos & Events -->
+    <section class="py-6 sm:py-8 px-4 bg-green-300 font-comic-neue">
+        <div class="max-w-screen-xl mx-auto">
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center">What's Happening</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="text-base sm:text-lg md:text-xl font-semibold">Grand Opening</h4>
+                    <p class="text-sm sm:text-base">Join us on June 15, 2025, for our grand opening! First 100 customers get a free snowball!</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="text-base sm:text-lg md:text-xl font-semibold">Summer Discount</h4>
+                    <p class="text-sm sm:text-base">20% off all snowballs every Wednesday in July!</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="text-base sm:text-lg md:text-xl font-semibold">Happy Hour Discount</h4>
+                    <p class="text-sm sm:text-base">Visit us Monday-Thursday between 3-5 pm for $1 off any regular sized snowball!</p>
+                </div>
             </div>
         </div>
-       </section>
-
+    </section>
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto grid grid-cols-1 sm:grid-cols-4 gap-6 px-4">
