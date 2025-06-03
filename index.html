@@ -45,14 +45,14 @@
         .prev { left: 10px; }
         .next { right: 10px; }
         .nav-links {
-            display: flex; /* Visible by default on desktop */
+            display: flex;
         }
         .hamburger {
-            display: none; /* Hidden by default on desktop */
+            display: none;
         }
         @media (max-width: 640px) {
             .nav-links {
-                display: none; /* Hidden by default on mobile */
+                display: none;
                 flex-direction: column;
                 width: 100%;
                 position: absolute;
@@ -63,7 +63,7 @@
                 padding: 1rem;
             }
             .nav-links.active {
-                display: flex; /* Shown when hamburger clicked */
+                display: flex;
             }
             .hamburger {
                 display: block;
@@ -84,11 +84,11 @@
 
 <!-- Navigation and Lilac Line Wrapper -->
     <div>
-        <nav class="bg-white text-black p-4 fixed w-full top-0 z-20 shadow-md">
+        <nav class="bg-white text-black p-3 fixed w-full top-0 z-20 shadow-md">
             <div class="container mx-auto flex justify-between items-center">
                 <div class="flex items-center space-x-2">
                     <a href="index.html">
-                        <img src="./images/logo_1.jpg" alt="Scapegoats Snowballs Logo" class="h-14 sm:h-14">
+                        <img src="./images/logo_1.jpg" alt="Scapegoats Snowballs Logo" class="h-12 sm:h-12">
                     </a>
                     <h1 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-500">Scapegoats Snowballs</h1>
                 </div>
@@ -105,23 +105,23 @@
                 </ul>
             </div>
         </nav>
-        <div class="bg-purple-200 h-1 w-screen fixed top-[86px] z-40"></div>
+        <div class="bg-purple-200 h-1 w-screen fixed top-[66px] z-40"></div>
     </div>
 
 <!-- Banner -->
-<!-- Banner -->
     <header class="relative pt-16 sm:pt-20">
-    <div class="bg-purple-200 flex items-center h-52 sm:h-64 md:h-80">
-        <div class="max-w-screen-xl mx-auto w-full flex flex-col md:flex-row">
-            <div class="flex-shrink-0">
-                <img src="./images/hero image.png" alt="Snowball Image" class="w-108 sm:w-144 h-56 sm:h-80 object-cover">
-            </div>
-            <div class="flex-grow md:ml-0">
-                <img src="./images/scapegoatsSnowballs.jpg" alt="New Banner Image" class="w-full h-56 sm:h-80 object-cover">
+        <div class="bg-purple-200 flex items-center h-36 sm:h-44 md:h-56">
+            <div class="max-w-screen-xl mx-auto w-full flex flex-col md:flex-row">
+                <div class="flex-shrink-0">
+                    <img src="./images/left.png" alt="Snowball Image" class="w-108 sm:w-144 h-40 sm:h-56 object-cover">
+                </div>
+                <div class="flex-grow md:ml-0">
+                    <img src="./images/reduceaspectScape.png" alt="New Banner Image" class="w-full h-40 sm:h-56 object-cover">
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
+
 <!-- Highlights and Carousel Section -->
     <section class="pt-8 sm:pt-10 py-8 sm:py-10 px-4 bg-gray-200 font-comic-neue">
         <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -179,7 +179,8 @@
             </div>
         </div>
     </section>
-    <!-- Footer Section -->
+
+<!-- Footer Section -->
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto grid grid-cols-1 sm:grid-cols-4 gap-6 px-4">
             <div>
