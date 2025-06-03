@@ -8,6 +8,7 @@
     <link rel="apple-touch-icon" href="./images/logo_1.jpg" sizes="180x180">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
     <style>
         .hamburger { display: none; }
         @media (max-width: 640px) {
@@ -36,9 +37,15 @@
         .goat-section.active, .feedback-section.active {
             display: block;
         }
+        body {
+            font-family: 'Comic Neue', cursive;
+        }
+        nav, footer {
+            font-family: sans-serif;
+        }
     </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100">
     <!-- Navigation -->
     <nav class="bg-white text-black p-4 fixed w-full top-0 z-20 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
@@ -64,105 +71,187 @@
     </nav>
 
     <!-- About Us Section -->
-    <section class="container mx-auto py-16 sm:py-20 px-4">
-        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6">About Us</h2>
+    <section class="container mx-auto pt-24 sm:pt-28 px-4">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8">About Us</h2>
 
         <!-- Our Story -->
-        <div class="mb-8">
-            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">Our Story</h3>
-            <div class="bg-white p-4 rounded shadow">
-                <p class="text-sm sm:text-base">
+        <div class="mb-12 bg-purple-200 p-6 rounded-lg">
+            <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 text-black">Our Story</h3>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="text-base sm:text-lg">
                     Scapegoats Snowballs was founded in 2010 by Maria Johnson, who wanted to bring the joy of authentic, gourmet snowballs to our community. What started as a small cart at local events has grown into the beloved neighborhood spot that it is today.
                 </p>
-                <p class="text-sm sm:text-base mt-2">
+                <p class="text-base sm:text-lg mt-4">
                     We take pride in our craft, using only the finest ingredients and house-made syrups to create unique flavor combinations that you won't find anywhere else. Our snowballs are known for their fluffy texture and rich flavors, creating the perfect treat for hot summer days or anytime you want to add a little sweetness to your life.
                 </p>
             </div>
         </div>
 
         <!-- Our Values -->
-        <div class="mb-8">
-            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">Our Values</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div class="bg-white p-4 rounded shadow">
-                    <h4 class="text-base sm:text-lg md:text-xl font-semibold">Quality First</h4>
-                    <p class="text-sm sm:text-base mt-2">We use only premium syrups and the fluffiest shaved ice for the perfect texture and flavor.</p>
+        <div class="mb-12 bg-purple-200 p-6 rounded-lg">
+            <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 text-black">Our Values</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-lg sm:text-xl md:text-2xl font-semibold">Quality First</h4>
+                    <p class="text-base sm:text-lg mt-3">We use only premium syrups and the fluffiest shaved ice for the perfect texture and flavor.</p>
                 </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <h4 class="text-base sm:text-lg md:text-xl font-semibold">Community Focus</h4>
-                    <p class="text-sm sm:text-base mt-2">We're proud to be a gathering place for families and friends in our community.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-lg sm:text-xl md:text-2xl font-semibold">Community Focus</h4>
+                    <p class="text-base sm:text-lg mt-3">We're proud to be a gathering place for families and friends in our community.</p>
                 </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <h4 class="text-base sm:text-lg md:text-xl font-semibold">Sustainability</h4>
-                    <p class="text-sm sm:text-base mt-2">We use eco-friendly packaging and support local suppliers whenever possible.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-lg sm:text-xl md:text-2xl font-semibold">Sustainability</h4>
+                    <p class="text-base sm:text-lg mt-3">We use eco-friendly packaging and support local suppliers whenever possible.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Team Members -->
-        <div class="mb-8">
-            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">Team Members</h3>
-            <div class="bg-white p-4 rounded shadow">
-                <p class="text-sm sm:text-base text-center">Meet our dedicated team members who make Frosty Delights a sweet success! (Coming soon)</p>
+        <!-- Meet Our Team -->
+        <div class="mb-12 bg-green-200 p-6 rounded-lg">
+            <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 text-black">Meet Our Team</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+                    <div class="bg-gray-200 h-40 w-full rounded-lg mb-4 mx-auto"></div>
+                    <h4 class="text-lg font-bold">Maria Johnson</h4>
+                    <p class="text-sm">Founder & CEO</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+                    <div class="bg-gray-200 h-40 w-full rounded-lg mb-4 mx-auto"></div>
+                    <h4 class="text-lg font-bold">James Smith</h4>
+                    <p class="text-sm">Head Chef</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+                    <div class="bg-gray-200 h-40 w-full rounded-lg mb-4 mx-auto"></div>
+                    <h4 class="text-lg font-bold">Sarah Williams</h4>
+                    <p class="text-sm">Customer Service</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+                    <div class="bg-gray-200 h-40 w-full rounded-lg mb-4 mx-auto"></div>
+                    <h4 class="text-lg font-bold">David Brown</h4>
+                    <p class="text-sm">Marketing</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- What Our Customers Say -->
+        <div class="mb-12 bg-green-200 p-6 rounded-lg">
+            <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 text-black">What Our Customers Say</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-300 rounded-full h-12 w-12 mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Amanda T.</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-base sm:text-lg">"The best snowballs I've ever had! The flavors are so unique and refreshing. My kids beg me to take them here every weekend!"</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-300 rounded-full h-12 w-12 mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Michael R.</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-base sm:text-lg">"I love the friendly staff and the creative flavor combinations. The 'Tropical Sunset' is my absolute favorite!"</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-300 rounded-full h-12 w-12 mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Jennifer L.</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-base sm:text-lg">"Such a fun place with a great atmosphere. The snowballs are always perfectly fluffy and the syrups taste so fresh!"</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-300 rounded-full h-12 w-12 mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Robert K.</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-base sm:text-lg">"I've been coming here for years and the quality never disappoints. The seasonal specials are always worth trying!"</p>
+                </div>
             </div>
         </div>
 
         <!-- Goat of the Month Bio -->
-        <div class="goat-section mb-8" id="goat-section">
-            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">Goat of the Month</h3>
-            <div class="bg-white p-4 rounded shadow">
-                <p class="text-sm sm:text-base" id="goat-bio">Sample Goat: Meet Billy, our star goat who loves nibbling on leftover snowball ice!</p>
-            </div>
-        </div>
-
-        <!-- What Our Customers Are Saying -->
-        <div class="feedback-section mb-8" id="feedback-section">
-            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">What Our Customers Are Saying</h3>
-            <div class="bg-white p-4 rounded shadow">
-                <p class="text-sm sm:text-base" id="customer-feedback">Sample Feedback: "Frosty Delights has the best snowballs in town!" - Happy Customer</p>
+        <div class="goat-section mb-12" id="goat-section">
+            <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6">Goat of the Month</h3>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="text-base sm:text-lg" id="goat-bio">Sample Goat: Meet Billy, our star goat who loves nibbling on leftover snowball ice!</p>
             </div>
         </div>
     </section>
 
     <!-- Footer Section -->
-<footer class="bg-gray-800 text-white py-8">
-    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-4 gap-6 px-4">
-        <div>
-            <h3 class="text-lg sm:text-xl font-semibold mb-4">Scapegoats Snowballs</h3>
-            <p class="text-sm sm:text-base">Handcrafted gourmet snowballs made with premium ingredients, serving our community since 2010.</p>
-            <img src="./images/logo_2.png" alt="Footer Logo" class="w-20 sm:w-24 h-auto mt-4 self-start">
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-4 gap-6 px-4">
+            <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-4">Scapegoats Snowballs</h3>
+                <p class="text-sm sm:text-base">Handcrafted gourmet snowballs made with premium ingredients, serving our community since 2010.</p>
+                <img src="./images/logo_2.png" alt="Footer Logo" class="w-20 sm:w-24 h-auto mt-4 self-start">
+            </div>
+            <div class="sm:translate-x-2">
+                <h3 class="text-lg sm:text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm sm:text-base">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="menu.html" class="hover:underline">Menu</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                    <li><a href="location.html" class="hover:underline">Location</a></li>
+                    <li><a href="careers.html" class="hover:underline">Careers</a></li>
+                </ul>
+            </div>
+            <div class="sm:-translate-x-2">
+                <h3 class="text-lg sm:text-xl font-semibold mb-4">Contact Us</h3>
+                <p class="text-sm sm:text-base">Email: <a href="mailto:ScapegoatsSnowballs@gmail.com" class="hover:underline">ScapegoatsSnowballs@gmail.com</a></p>
+                <p class="text-sm sm:text-base">Phone: <a href="tel:+17039579523" class="hover:underline">(703) 957-9523</a></p>
+                <p class="mt-2 text-sm sm:text-base">Follow us:</p>
+                <p class="text-sm sm:text-base">
+                    <a href="https://x.com/frostydelights" class="hover:underline"><i class="fab fa-x-twitter mr-1"></i>X</a> | 
+                    <a href="https://instagram.com/frostydelights" class="hover:underline"><i class="fab fa-instagram mr-1"></i>Instagram</a> | 
+                    <a href="https://www.facebook.com/profile.php?id=61574954050915" class="hover:underline"><i class="fab fa-facebook-f mr-1"></i>Facebook</a>
+                </p>
+            </div>
+            <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-4">Hours of Operation</h3>
+                <p class="text-sm sm:text-base">Monday to Sunday: 12:00 PM - 7:00 PM</p>
+            </div>
         </div>
-        <div class="sm:translate-x-2">
-            <h3 class="text-lg sm:text-xl font-semibold mb-4">Quick Links</h3>
-            <ul class="space-y-2 text-sm sm:text-base">
-                <li><a href="index.html" class="hover:underline">Home</a></li>
-                <li><a href="menu.html" class="hover:underline">Menu</a></li>
-                <li><a href="about.html" class="hover:underline">About Us</a></li>
-                <li><a href="contact.html" class="hover:underline">Contact</a></li>
-                <li><a href="location.html" class="hover:underline">Location</a></li>
-                <li><a href="careers.html" class="hover:underline">Careers</a></li>
-            </ul>
+        <div class="text-center mt-6 text-sm sm:text-base">
+            <p>© 2025 Scapegoats Snowballs. All rights reserved.</p>
         </div>
-        <div class="sm:-translate-x-2">
-            <h3 class="text-lg sm:text-xl font-semibold mb-4">Contact Us</h3>
-            <p class="text-sm sm:text-base">Email: <a href="mailto:ScapegoatsSnowballs@gmail.com" class="hover:underline">ScapegoatsSnowballs@gmail.com</a></p>
-            <p class="text-sm sm:text-base">Phone: <a href="tel:+17039579523" class="hover:underline">(703) 957-9523</a></p>
-            <p class="mt-2 text-sm sm:text-base">Follow us:</p>
-            <p class="text-sm sm:text-base">
-                <a href="https://x.com/frostydelights" class="hover:underline"><i class="fab fa-x-twitter mr-1"></i>X</a> | 
-                <a href="https://instagram.com/frostydelights" class="hover:underline"><i class="fab fa-instagram mr-1"></i>Instagram</a> | 
-                <a href="https://www.facebook.com/profile.php?id=61574954050915" class="hover:underline"><i class="fab fa-facebook-f mr-1"></i>Facebook</a>
-            </p>
-        </div>
-        <div>
-            <h3 class="text-lg sm:text-xl font-semibold mb-4">Hours of Operation</h3>
-            <p class="text-sm sm:text-base">Monday to Sunday: 12:00 PM - 7:00 PM</p>
-        </div>
-    </div>
-    <div class="text-center mt-6 text-sm sm:text-base">
-        <p>© 2025 Scapegoats Snowballs. All rights reserved.</p>
-    </div>
-</footer>
+    </footer>
 
     <script>
         // Hamburger menu toggle
